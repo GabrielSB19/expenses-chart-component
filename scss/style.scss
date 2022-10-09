@@ -93,11 +93,11 @@
         }
     }
     &__analitics{
-        border: 1px solid red;
         display: flex;
         justify-content: space-between;
         padding: 24px;
         font-size: 0.7em;
+        border-top: 2px solid variables.$Cream;
 
     }
     &__total{
@@ -113,5 +113,39 @@
         font-weight: 700;
         text-align: right;
         margin-top: 18px;
+    }
+    @media (min-width: 660px) {
+        height: 512px;
+        padding: 44px;
+        &__title{
+            font-size: 2em;
+        }
+        &__bar-container{
+            margin-bottom: 50px;
+        }
+        &__bar{
+            width: 50px;
+            &--label{
+                width: 54px;
+                font-size: 0.7em;
+                top: -32px;
+                left: 2px;
+            }
+            &--day{
+                width: 54px;
+                bottom: -24px;
+                font-size: 0.8em;
+            }
+        }
+        &__analitics{
+            padding-top: 32px;
+            font-size: 0.9em;
+        }
+        &__total-value{
+            font-size: 2.4em;
+        }
+        &__percentage{
+            margin-top: 30px;
+        }
     }
 }
