@@ -1,6 +1,45 @@
 @use 'initial';
 @use 'variables';
 
-.main-contianer{
-    
+.main-container{
+    border: 1px solid red;
+    width: 344px;
+    margin: 68px auto;
+    @media (min-width: 660px) {
+        width: 540px;
+    }
+}
+
+.balance{
+    background-color: variables.$SoftRed;
+    height: 100px;
+    border-radius: 16px;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: variables.$VeryPaleOrange;
+    margin-bottom: 16px;
+    &__title{
+        font-size: 0.7em;
+    }
+    &__total{
+        font-weight: 700;
+        font-size: 1.4em;
+    }
+    &__logo{
+        width: 60px;
+    }
+    @media (min-width: 660px) {
+        height: 126px;
+        &__title{
+            font-size: 1em;
+            margin-bottom: 12px;
+        }
+        &__total{
+            font-size: 1.8em;
+        }
+        &__logo{
+            width: 75px;
+        }
+    }
 }

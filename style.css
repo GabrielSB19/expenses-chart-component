@@ -20,4 +20,51 @@ body {
   color: hsl(228deg, 45%, 44%);
 }
 
+.main-container {
+  border: 1px solid red;
+  width: 344px;
+  margin: 68px auto;
+}
+@media (min-width: 660px) {
+  .main-container {
+    width: 540px;
+  }
+}
+
+.balance {
+  background-color: hsl(10deg, 79%, 65%);
+  height: 100px;
+  border-radius: 16px;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(33deg, 100%, 98%);
+  margin-bottom: 16px;
+}
+.balance__title {
+  font-size: 0.7em;
+}
+.balance__total {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.balance__logo {
+  width: 60px;
+}
+@media (min-width: 660px) {
+  .balance {
+    height: 126px;
+  }
+  .balance__title {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+  .balance__total {
+    font-size: 1.8em;
+  }
+  .balance__logo {
+    width: 75px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
