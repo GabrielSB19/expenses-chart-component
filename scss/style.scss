@@ -2,7 +2,6 @@
 @use 'variables';
 
 .main-container{
-    border: 1px solid red;
     width: 344px;
     margin: 68px auto;
     @media (min-width: 660px) {
@@ -40,6 +39,53 @@
         }
         &__logo{
             width: 75px;
+        }
+    }
+}
+
+.chart{
+    background-color: variables.$VeryPaleOrange;
+    color: variables.$MediumBrown;
+    border-radius: 16px;
+    height: 440px;
+    padding: 28px 20px;
+    &__title{
+        color: variables.$DarkBrown;
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+    &__bar-container{
+        height: 220px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    &__bar{
+        background-color: variables.$SoftRed;
+        width: 32px;
+        height: 200px;
+        border-radius: 4px;
+        position: relative;
+        &--label{
+            background-color: variables.$DarkBrown;
+            width: 38px;
+            font-size: 0.5em;
+            color: variables.$VeryPaleOrange;
+            border-radius: 4px;
+            font-weight: 700;
+            position: absolute;
+            top: -24px;
+            left: -4px;
+            text-align: center;
+            display: none;
+        }
+        &--day{
+            position: absolute;
+            bottom: -16px;
+            font-size: 0.6em;
+            width: 32px;
+            text-align: center;
         }
     }
 }
