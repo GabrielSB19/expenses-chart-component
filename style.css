@@ -112,5 +112,30 @@ body {
   width: 32px;
   text-align: center;
 }
+.chart__bar:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+.chart__analitics {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  font-size: 0.7em;
+}
+.chart__total {
+  margin-bottom: 8px;
+}
+.chart__total-value {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.chart__percentage {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  text-align: right;
+  margin-top: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */

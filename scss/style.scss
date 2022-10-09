@@ -87,5 +87,31 @@
             width: 32px;
             text-align: center;
         }
+        &:hover{
+            cursor: pointer;
+            filter: brightness(1.2);
+        }
+    }
+    &__analitics{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+        font-size: 0.7em;
+
+    }
+    &__total{
+        margin-bottom: 8px;
+    }
+    &__total-value{
+        color: variables.$DarkBrown;
+        font-weight: 700;
+        font-size: 1.4em;
+    }
+    &__percentage{
+        color: variables.$DarkBrown;
+        font-weight: 700;
+        text-align: right;
+        margin-top: 18px;
     }
 }
