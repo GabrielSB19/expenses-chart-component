@@ -76,7 +76,7 @@ body {
 .chart__title {
   color: hsl(25deg, 47%, 15%);
   font-size: 1.25em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .chart__bar-container {
   height: 220px;
