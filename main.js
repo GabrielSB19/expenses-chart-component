@@ -32,12 +32,18 @@ bars.forEach(e =>{
     }
 
     e.addEventListener('mouseover', event=>{
-        let labelElement = event.target.childNodes[1];
-        labelElement.style.display = "block";
+        if (event.target.className != 'chart__bar--day') {
+            let labelElement = event.target.childNodes[1];
+            labelElement.style.display = "block";            
+        }
     })
+
+
     e.addEventListener('mouseout', event=>{
-        let actualElement = event.target.childNodes[1];
-        actualElement.style.display = "none";
+        if (event.target.className != 'chart__bar--day') {
+            let actualElement = event.target.childNodes[1];
+            actualElement.style.display = "none";
+        }
     })
 })
 
